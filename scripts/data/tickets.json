@@ -1,0 +1,182 @@
+[
+  {
+    "text": "Customer reported login issues on mobile app. User ID: CUS123. Issue: Unable to login after recent app update 2.1.0. Error message shows 'Authentication failed'. Steps taken: 1. Cleared app cache 2. Reset password 3. Verified email is verified. Resolution: Bug found in authentication module for iOS devices, pushed hotfix 2.1.1.",
+    "metadata": {
+      "ticket_id": "T-1001",
+      "category": "Authentication",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "iOS"
+    }
+  },
+  {
+    "text": "Payment processing failure reported. Customer attempted to make a purchase of $299.99. Transaction ID: TRX789. Error occurred during payment gateway integration. Customer receiving error 'Transaction declined'. Investigation showed expired SSL certificate on payment gateway. Certificate renewed and transaction processed successfully.",
+    "metadata": {
+      "ticket_id": "T-1002",
+      "category": "Payment",
+      "priority": "Critical",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Data sync issue between mobile and web platform. Customer ID: CUS456. Customer reports that tasks created on mobile are not appearing on web interface. Sync delay observed of approximately 30 minutes. Root cause: Redis cache invalidation timing issue. Fixed by adjusting cache refresh intervals.",
+    "metadata": {
+      "ticket_id": "T-1003",
+      "category": "Sync",
+      "priority": "Medium",
+      "status": "Resolved",
+      "platform": "Cross-platform"
+    }
+  },
+  {
+    "text": "Performance degradation in dashboard loading. Customer reported 15+ second load time for main dashboard. Investigation revealed inefficient database queries and missing indexes. Optimization applied: Added composite index on frequently queried columns, implemented query caching. Load time reduced to 2 seconds.",
+    "metadata": {
+      "ticket_id": "T-1004",
+      "category": "Performance",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Export functionality not working for large datasets. Customer attempting to export 50,000 records as CSV. Export job timing out after 30 seconds. Solution implemented: Added background job processing for large exports, sending email notification when export is ready for download.",
+    "metadata": {
+      "ticket_id": "T-1005",
+      "category": "Data Export",
+      "priority": "Medium",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Push notification not working on Android devices. Customer ID: CUS789. Android version: 13. Firebase configuration issue identified. Token refresh not happening properly. Fixed by updating Firebase SDK and implementing proper token refresh mechanism.",
+    "metadata": {
+      "ticket_id": "T-1006",
+      "category": "Notifications",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "Android"
+    }
+  },
+  {
+    "text": "API rate limiting issues for enterprise customer. Customer hitting rate limit of 100 requests/minute. Business requirement is for 500 requests/minute. Updated rate limiting policy for enterprise tier accounts. Implemented redis-based rate limiting with proper monitoring.",
+    "metadata": {
+      "ticket_id": "T-1007",
+      "category": "API",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "API"
+    }
+  },
+  {
+    "text": "Custom report generator throwing errors. Error occurs when including calculated fields. SQL query timing out for complex calculations. Optimized query performance by implementing materialized views and adding appropriate indexes. Added caching layer for frequently accessed reports.",
+    "metadata": {
+      "ticket_id": "T-1008",
+      "category": "Reporting",
+      "priority": "Medium",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "SSO integration failure with Okta. Customer unable to login using Okta SSO. Error in SAML assertion validation. Configuration issue identified in SP metadata. Updated SAML certificates and fixed audience URI configuration.",
+    "metadata": {
+      "ticket_id": "T-1009",
+      "category": "Authentication",
+      "priority": "Critical",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Billing automation system double-charging customers. Affected period: March 2024. Root cause: Race condition in payment processing webhook handler. Implementation of idempotency keys and transaction logs. Refunds processed for all affected customers.",
+    "metadata": {
+      "ticket_id": "T-1010",
+      "category": "Billing",
+      "priority": "Critical",
+      "status": "Resolved",
+      "platform": "System"
+    }
+  },
+  {
+    "text": "Customer reported login issues on Android app. User ID: CUS456. Issue: Unable to login after recent app update 3.0.1. Error message shows 'Authentication failed'. Steps taken: 1. Cleared app cache 2. Reset password 3. Verified email is verified. Resolution: Bug found in authentication module for Android devices, pushed hotfix 3.0.2.",
+    "metadata": {
+      "ticket_id": "T-2001",
+      "category": "Authentication",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "Android"
+    }
+  },
+  {
+    "text": "Payment processing failure reported. Customer attempted to make a purchase of $599.99. Transaction ID: TRX999. Error occurred during payment gateway integration. Customer receiving error 'Transaction declined'. Investigation showed expired API keys on payment gateway. Keys renewed and transaction processed successfully.",
+    "metadata": {
+      "ticket_id": "T-2002",
+      "category": "Payment",
+      "priority": "Critical",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Data sync issue between desktop and web platform. Customer ID: CUS789. Customer reports that tasks created on desktop are not appearing on web interface. Sync delay observed of approximately 45 minutes. Root cause: Redis cluster failover issues. Fixed by implementing better failover handling.",
+    "metadata": {
+      "ticket_id": "T-2003",
+      "category": "Sync",
+      "priority": "Medium",
+      "status": "Resolved",
+      "platform": "Cross-platform"
+    }
+  },
+  {
+    "text": "API rate limiting causing timeouts. Customer ID: CUS876. Application hitting default rate limit of 100 requests/minute. Business needs 300 requests/minute. Implemented per-tenant rate limiting with Redis and upgraded customer's plan.",
+    "metadata": {
+      "ticket_id": "T-2007",
+      "category": "API",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "API"
+    }
+  },
+  {
+    "text": "API throttling issues reported. Customer ID: CUS654. Mobile app experiencing timeouts due to rate limits. Current limit: 100 req/min, needed: 400 req/min. Solution: Implemented client-side request batching and increased rate limits.",
+    "metadata": {
+      "ticket_id": "T-3007",
+      "category": "API",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "API"
+    }
+  },
+  {
+    "text": "Customer reported login issues on iOS app. User ID: CUS321. Issue: Unable to login after recent app update 4.1.0. Error message shows 'Authentication failed'. Steps taken: 1. Cleared keychain 2. Reset password 3. Verified 2FA status. Resolution: Bug found in biometric authentication, pushed hotfix 4.1.1.",
+    "metadata": {
+      "ticket_id": "T-3001",
+      "category": "Authentication",
+      "priority": "High",
+      "status": "Resolved",
+      "platform": "iOS"
+    }
+  },
+  {
+    "text": "Payment processing failure reported. Customer attempted to make a purchase of $999.99. Transaction ID: TRX123. Error occurred during payment gateway integration. Customer receiving error 'Transaction declined'. Investigation showed incorrect merchant configuration. Updated merchant settings and transaction processed successfully.",
+    "metadata": {
+      "ticket_id": "T-3002",
+      "category": "Payment",
+      "priority": "Critical",
+      "status": "Resolved",
+      "platform": "Web"
+    }
+  },
+  {
+    "text": "Data sync issue between mobile apps. Customer ID: CUS654. Customer reports that tasks created on iOS are not appearing on Android. Sync delay observed of approximately 20 minutes. Root cause: GraphQL cache inconsistency. Fixed by implementing cache invalidation strategy.",
+    "metadata": {
+      "ticket_id": "T-3003",
+      "category": "Sync",
+      "priority": "Medium",
+      "status": "Resolved",
+      "platform": "Cross-platform"
+    }
+  }
+]
